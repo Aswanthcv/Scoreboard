@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scoreboard</title>
+    <link rel="stylesheet" href="scores.css">
+</head>
+<body>
+    <div class="head">
+        <h1>Scoreboard</h1>
+    </div>
+    
+    <div id="teams">
+        <div class="team" id="team1">
+            <h3>Team 1</h3>
+            <p id="score1">0</p>
+            <button onclick="updateScore(1)">Click</button>
+        </div>
+        
+        <div class="team" id="team2">
+            <h3>Team 2</h3>
+            <p id="score2">0</p>
+            <button onclick="updateScore(2)">Click</button>
+        </div>
+    </div>
+
+    <p id="leader">No points</p>
+    <button onclick="stopGame()">STOP</button>
+    <button onclick="resetGame()">RESET</button>
+    <script src="scores.js"></script>
+</body>
+</html>
